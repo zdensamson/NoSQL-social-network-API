@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/zdensamson/NoSQL-social-network-API#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^6.0.11"
   }
 }
