@@ -1,0 +1,23 @@
+{
+  "name": "NoSQL-social-network-API",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zdensamson/NoSQL-social-network-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zdensamson/NoSQL-social-network-API/issues"
+  },
+  "homepage": "https://github.com/zdensamson/NoSQL-social-network-API#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
