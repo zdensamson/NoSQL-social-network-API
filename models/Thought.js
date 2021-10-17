@@ -13,7 +13,7 @@ const ThoughtSchema = new Schema({
     username: {
         type: String,
         required: true
-    },
+    }
     // reaction reference goes here
 });
 
