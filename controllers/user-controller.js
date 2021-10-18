@@ -81,13 +81,29 @@ const userController = {
         )
             .then(dbUserData => {
                 if (!dbUserData) {
-                    res.status(404).json({ message: 'No user found with this ID' })
+                    res.status(404).json({ message: 'No user found with this ID' });
                     return;
                 }
                 res.json(dbUserData);
             })
-            .catch(err => res.status(400).json(err))
+            .catch(err => res.status(400).json(err));
     },
+
+    removeFriend({ params }, res) {
+        User.findOneAndUpdate(
+            { _id: params.userId },
+            { $pull: { friends: params.friendId } },
+            { new: true }
+        )
+            .then(dbUserData => {
+                if (!dbUserData) {
+                    res.status(404).json({ message: 'No user found with this ID' });
+                    return;
+                }
+                res.json(dbUserData);
+            })
+            .catch(err => res.status(400).json(err));
+    }
 };
 
 module.exports = userController;
